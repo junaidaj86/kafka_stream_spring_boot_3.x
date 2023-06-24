@@ -1,4 +1,5 @@
 package learning.kafka.spring.boot.stream.model;
+
 public class Order {
   private Address address;
   private Long ordertime;
@@ -6,19 +7,14 @@ public class Order {
   private String itemid;
 
   public Order(
-      final Address address,
-      final Long ordertime,
-      final int orderid,
-      final String itemid
-  ) {
+      final Address address, final Long ordertime, final int orderid, final String itemid) {
     this.address = address;
     this.ordertime = ordertime;
     this.orderid = orderid;
     this.itemid = itemid;
   }
 
-  public Order() {
-  }
+  public Order() {}
 
   public Address getAddress() {
     return address;

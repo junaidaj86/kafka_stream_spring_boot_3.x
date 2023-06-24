@@ -19,7 +19,6 @@ public class StreamConfigurations {
   @Bean(name = KafkaStreamsDefaultConfiguration.DEFAULT_STREAMS_CONFIG_BEAN_NAME)
   KafkaStreamsConfiguration kStreamsConfig() {
     Map<String, Object> props = kafkaProperties.buildStreamsProperties();
-
     return new KafkaStreamsConfiguration(props);
   }
 }

@@ -11,8 +11,7 @@ public class Address {
     this.zipcode = zipcode;
   }
 
-  public Address() {
-  }
+  public Address() {}
 
   public String getCity() {
     return city;
@@ -38,4 +37,3 @@ public class Address {
     this.zipcode = zipcode;
   }
 }
-
