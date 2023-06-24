@@ -10,9 +10,9 @@ import org.springframework.kafka.config.KafkaStreamsConfiguration;
 @Configuration
 public class StreamConfigurations {
 
-  KafkaProperties kafkaProperties;
+  private final KafkaProperties kafkaProperties;
 
-  public StreamConfigurations(final KafkaProperties kafkaProperties) {
+  public StreamConfigurations(KafkaProperties kafkaProperties) {
     this.kafkaProperties = kafkaProperties;
   }
 
